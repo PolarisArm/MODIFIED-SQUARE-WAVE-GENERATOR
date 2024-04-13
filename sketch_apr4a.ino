@@ -17,7 +17,7 @@ void setup() {
   TCCR2B = 0;
   TCNT2  = 0;
   TCNT1  = 0;
-
+  // TIMER 1 AND 2 USED IN PHASE CORRECT PWM NON INVERTING MODE
   TCCR1A |= (1 << COM1A1) | (1 << COM1B1) |(1 << COM1A0) |(1 << COM1B0)| (1 << WGM10);
   TCCR1B |= (1 << CS10);
   
